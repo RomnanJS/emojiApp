@@ -23,15 +23,15 @@ margin-bottom: 24px;
 
 .flex_box{ 
   
-  
+  width: 986px;
   flex-wrap: wrap;
     display: flex;
     flex-direction:row;
     row-gap: 22px;
     column-gap: 18px;
-   justify-content: center;
-   padding: 0 225px 0 225px; 
+   justify-content: center; 
    background: #D4D3D8;
+   margin: 0 auto;
 }
 
 
