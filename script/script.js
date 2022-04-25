@@ -29,4 +29,25 @@
 // let section = document.getElementsByTagName("section")[0];
 // section.insertAdjacentHTML("afterbegin", "<div> привет </div>");
 
-document;
+// document;
+
+// let getEmoji = (img, title, text) => {
+//   //   let emojiBlockLine = document.getElementsByClassName("emoji__block_line")[0];
+//   let emojiBlock = document.createElement("div");
+//   document.querySelector("main");
+//   //   main.insertAdjacentHTML("<div></div>");
+//   emojiBlock.className = "emoji__block";
+
+//   emojiBlockLine.append(emojiBlock);
+
+//   emojiBlock.insertAdjacentHTML("afterbegin", "<p>" + text + "</p>");
+//   emojiBlock.insertAdjacentHTML("afterbegin", "<h3>" + title + "</h3>");
+//   emojiBlock.insertAdjacentHTML("afterbegin", "<div>" + img + "</div>");
+// };
+
+// getEmoji("", "fff", "fff");
+// getEmoji("", "fff", "fff");
+// getEmoji("", "fff", "fff");
+// getEmoji("", "fff", "fff");
+// getEmoji("", "fff", "fff");
+// getEmoji("", "fff", "fff");
