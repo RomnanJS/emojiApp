@@ -21,7 +21,7 @@ margin-bottom: 24px;
 
 }
 
-.flex_box{ 
+.fflexbox{ 
   
   width: 986px;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@ margin-bottom: 24px;
 }
 
 
-.columns__row{
+.card{
   background-color:  #FFFFFF;
   width: 316px;
   height: 184px;
@@ -48,6 +48,7 @@ margin-bottom: 24px;
 }
 
 
-img{
+.img{
   margin-top: 24px;
+  margin-bottom: 18px;
 }
