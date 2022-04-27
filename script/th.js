@@ -55,7 +55,7 @@ function inputHandler(event) {
 
 let getSortData = (sort) => {
   sort.forEach((element) => {
-    createCard1(element.symbol, element.title, element.keywords);
+    createCard1(element.symbol, element.keywords, element.title);
   });
 };
 
