@@ -11,9 +11,9 @@ function createCard1(symbol, title, keywords) {
   text2.append(keywords);
 
   divcard.append(cartin);
-  divcard.append(text2);
-  divcard.append(text);
 
+  divcard.append(text);
+  divcard.append(text2);
   console.log(divcard);
   main.append(divcard);
 
@@ -22,8 +22,8 @@ function createCard1(symbol, title, keywords) {
 
   console.log(divbox);
   cartin.classList.add("img");
-  text.classList.add("tex1");
-  text2.classList.add("text2");
+  text.classList.add("text2");
+  text2.classList.add("text1");
 }
 
 let divbox = document.createElement("div");
@@ -34,13 +34,14 @@ divbox.classList.add("fflexbox");
 //   createCard1(elem.symbol, elem.title, elem.keywords);
 //   console.log(elem.title);
 // });
-
-data.forEach((elem) => createCard1(elem.symbol, elem.keywords, elem.title));
+//   фурыч  переберает элемменты data и Стрелочная функция которая (для каждодго элемента  она вызывает функцию createCard1)
+data.forEach((elem) => createCard1(elem.symbol, elem.title, elem.keywords));
 
 const inputheader = document.querySelector(".search");
-
+// событие инпут  для поля поиск когда происходит событие инпут(поиск) то вызывается функция    inputHandler которой передаётся глобальтный обЪект       (event)
+// (вызываем функцию которая внизу)
 inputheader.addEventListener("input", (event) => inputHandler(event));
-
+// (вот она)
 function inputHandler(event) {
   console.log(event.target.value);
   let sort = data.filter(
@@ -55,7 +56,7 @@ function inputHandler(event) {
 
 let getSortData = (sort) => {
   sort.forEach((element) => {
-    createCard1(element.symbol, element.keywords, element.title);
+    createCard1(element.symbol, element.title, element.keywords);
   });
 };
 
